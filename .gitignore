@@ -1,6 +1,6 @@
-node_modules
+play-big-data-master
+nodejs/node_modules
 env
-cred
-redis
 spark/spark-streaming-kafka-0-8-assembly_2.11-2.0.2.jar
 .DS_Store
+.gitignore

@@ -70,9 +70,7 @@ if __name__ == '__main__':
 	kafka_broker = args.kafka_broker
 
 	# - initiate a kafka producer
-	producer = KafkaProducer(
-		bootstrap_servers = kafka_broker
-	)
+	producer = KafkaProducer(bootstrap_servers = kafka_broker)
 
 	# - schedule to run every second
 	schedule.every(1).second.do(fetch_price, producer, symbol)
